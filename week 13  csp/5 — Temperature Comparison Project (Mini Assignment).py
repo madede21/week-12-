@@ -12,3 +12,17 @@
 
 # Starter Code:
 
+# Ask the user for today's temperature
+temperature = float(input("Enter today's temperature in °F: "))
+
+# Check for extreme temperatures
+if temperature < -10 or temperature > 110:
+    print("Extreme temperature warning!")
+else:
+    # Classify the temperature
+    if temperature < 50:
+        print("It's cold.")
+    elif temperature < 80:
+        print("It's warm.")
+    else:
+        print("It's hot.")
